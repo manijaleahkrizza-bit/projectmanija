@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Book Your Northern Mindanao Adventure | Resorts, Destinations & Restaurants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <i class="fas fa-route"></i>
+                <span>NORTHERN MINDANAO <span class="light">ROUND TRIP</span></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#restaurants">Restaurants</a></li>
+                    <li><a href="#resorts">Resorts</a></li>
+                    <li><a href="#booking-section">Book Now</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <h1>Plan Your <span class="accent">Northern Mindanao</span> Getaway</h1>
+                <p>Choose your favorite destinations, restaurants, and resorts. Create your perfect island adventure in the Pearl of the South!</p>
+            </div>
+        </section>
+
+        <!-- DESTINATIONS SECTION - 5 Famous Places -->
+        <section id="destinations" class="selection-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Explore</span>
+                    <h2>5 Must-Visit <span class="accent">Destinations</span></h2>
+                    <p>Select the places you want to visit in Northern Mindanao</p>
+                </div>
+                <div class="cards-grid" id="destinationsGrid"></div>
+            </div>
+        </section>
+
+        <!-- RESTAURANTS SECTION - 5 Best Restaurants -->
+        <section id="restaurants" class="selection-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Dine in Style</span>
+                    <h2>5 Best <span class="accent">Restaurants</span></h2>
+                    <p>Experience the authentic flavors of Northern Mindanao</p>
+                </div>
+                <div class="cards-grid" id="restaurantsGrid"></div>
+            </div>
+        </section>
+
+        <!-- RESORTS SECTION - 5 Premium Resorts -->
+        <section id="resorts" class="selection-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Stay in Style</span>
+                    <h2>5 Premium <span class="accent">Resorts</span></h2>
+                    <p>Choose where you want to stay during your Northern Mindanao adventure</p>
+                </div>
+                <div class="cards-grid" id="resortsGrid"></div>
+            </div>
+        </section>
+
+        <!-- BOOKING SUMMARY SECTION -->
+        <section id="booking-section" class="booking-summary">
+            <div class="container">
+                <div class="summary-wrapper">
+                    <div class="summary-header">
+                        <h2><i class="fas fa-suitcase-rolling"></i> Your Booking Summary</h2>
+                        <p>Review your selections and complete your booking</p>
+                    </div>
+                    
+                    <div class="summary-content">
+                        <div class="selected-items">
+                            <div class="selected-destinations">
+                                <h3><i class="fas fa-map-marker-alt"></i> Selected Destinations</h3>
+                                <div id="selectedDestinationsList" class="selected-list">
+                                    <p class="empty-message">No destinations selected yet</p>
+                                </div>
+                            </div>
+                            
+                            <div class="selected-restaurants">
+                                <h3><i class="fas fa-utensils"></i> Selected Restaurants</h3>
+                                <div id="selectedRestaurantsList" class="selected-list">
+                                    <p class="empty-message">No restaurants selected yet</p>
+                                </div>
+                            </div>
+                            
+                            <div class="selected-resorts">
+                                <h3><i class="fas fa-hotel"></i> Selected Resort</h3>
+                                <div id="selectedResortList" class="selected-list">
+                                    <p class="empty-message">No resort selected yet</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- PRICE BREAKDOWN WITH ADULT/CHILD/SENIOR PRICING -->
+                        <div class="price-breakdown">
+                            <h3>Price Breakdown</h3>
+                            
+                            <!-- Traveler Type Selection -->
+                            <div class="traveler-types">
+                                <div class="traveler-input">
+                                    <label><i class="fas fa-user"></i> Adults (12+ yrs)</label>
+                                    <input type="number" id="adultCount" min="0" value="2" step="1">
+                                    <span class="price-note">₱1,500 each</span>
+                                </div>
+                                <div class="traveler-input">
+                                    <label><i class="fas fa-child"></i> Children (3-11 yrs)</label>
+                                    <input type="number" id="childCount" min="0" value="0" step="1">
+                                    <span class="price-note">₱800 each</span>
+                                </div>
+                                <div class="traveler-input">
+                                    <label><i class="fas fa-user-plus"></i> Seniors (60+ yrs)</label>
+                                    <input type="number" id="seniorCount" min="0" value="0" step="1">
+                                    <span class="price-note">₱1,200 each (20% discount)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="price-item">
+                                <span>Destinations (₱500 per location):</span>
+                                <span id="destinationsPrice">₱0</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Restaurants (₱350 per booking):</span>
+                                <span id="restaurantsPrice">₱0</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Resort Package (per night):</span>
+                                <span id="resortPrice">₱0</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Adults Total:</span>
+                                <span id="adultsTotalPrice">₱0</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Children Total:</span>
+                                <span id="childrenTotalPrice">₱0</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Seniors Total:</span>
+                                <span id="seniorsTotalPrice">₱0</span>
+                            </div>
+                            <div class="price-item total">
+                                <span>Total Package Price:</span>
+                                <span id="totalPrice">₱0</span>
+                            </div>
+                        </div>
+                        
+                        <!-- BOOKING FORM -->
+                        <form id="bookingForm" class="booking-form">
+                            <h3><i class="fas fa-user-check"></i> Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name *</label>
+                                    <input type="text" id="fullName" required placeholder="Juan Dela Cruz">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" required placeholder="juan@example.com">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" required placeholder="0912 345 6789">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nights">Number of Nights *</label>
+                                    <input type="number" id="nights" min="1" value="2" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="checkIn">Check-in Date *</label>
+                                    <input type="date" id="checkIn" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkOut">Check-out Date *</label>
+                                    <input type="date" id="checkOut" required readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="specialRequests">Special Requests</label>
+                                <textarea id="specialRequests" rows="3" placeholder="Any dietary restrictions, room preferences, or special accommodations?"></textarea>
+                            </div>
+                            
+                            <!-- QR CODE FOR CONFIRMATION -->
+                            <div class="qr-section">
+                                <h4><i class="fas fa-qrcode"></i> Payment Confirmation QR Code</h4>
+                                <p>Scan this QR code after booking to receive your digital confirmation and itinerary</p>
+                                <div id="qrCodeContainer" class="qr-code-container">
+                                    <canvas id="qrCanvas"></canvas>
+                                    <p class="qr-note">Booking confirmation QR will appear after submission</p>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit" id="submitBooking">
+                                <i class="fas fa-check-circle"></i> Confirm Booking
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CHATBOT WIDGET -->
+    <div id="chatbotWidget" class="chatbot-widget">
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comment-dots"></i>
+            <span>Chat with us</span>
+        </div>
+        <div class="chatbot-container" id="chatbotContainer">
+            <div class="chatbot-header">
+                <i class="fas fa-headset"></i>
+                <h4>Mindanao Travel Assistant</h4>
+                <button class="chatbot-close" id="chatbotClose">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="bot-message">
+                    <i class="fas fa-robot"></i>
+                    <p>Hello! 👋 I'm your Northern Mindanao travel assistant. Need help with destinations, resorts, or booking? Ask me anything!</p>
+                </div>
+            </div>
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbotInput" placeholder="Type your question..." autocomplete="off">
+                <button id="chatbotSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-route"></i> Northern Mindanao Round Trip
+                </div>
+                <p>Your gateway to the enchanting region of Northern Mindanao, where nature, culture, and adventure create unforgettable memories.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> northernmindanaoroundtrip@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 0912 291 9554</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Northern Mindanao Round Trip — Discover the Heart of Northern Mindanao</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SUCCESS MODAL -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <i class="fas fa-check-circle modal-icon"></i>
+            <h3>Booking Confirmed!</h3>
+            <p>Thank you for booking your Northern Mindanao adventure! A confirmation email has been sent to your email address. Your QR code has been generated for verification. Our travel specialist will contact you within 24 hours.</p>
+            <div id="modalQrContainer" class="modal-qr"></div>
+            <button class="modal-close-btn">OK, Got it!</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs2-fix@0.0.1/qrcode.min.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>

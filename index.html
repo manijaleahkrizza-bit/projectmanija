@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Northern Mindanao Round Trip | Discover the Pearl of the South</title>
+    <!-- Google Fonts + Font Awesome (icons) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- External CSS (separate file) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- STICKY NAVIGATION -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <i class="fas fa-route"></i> 
+                <span>NORTHERN MINDANAO <span class="light">ROUND TRIP</span></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#attractions">Attractions</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="book-nav-btn" id="navBookBtn" onclick="window.location.href='Book.html'">
+                <i class="fas fa-calendar-check"></i> Book Now
+            </button>
+            <div class="menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <span class="hero-tag">#NorthernMindanaoRoundTrip</span>
+                <h1>Discover the<br>Heart of the North</h1>
+                <p>From majestic mountains to crystal clear waters, experience the breathtaking beauty of Northern Mindanao  where adventure meets paradise in the Philippines' vibrant region.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary book-now-hero"><i class="fas fa-map-marked-alt"></i> Plan Your Trip</button>
+                    <button class="btn-outline explore-btn"><i class="fas fa-play-circle"></i> Explore Wonders</button>
+                </div>
+            </div>
+        </section>  
+
+        <!-- ATTRACTIONS SECTION - 6 FAMOUS PLACES IN NORTHERN MINDANAO -->
+        <section id="attractions" class="attractions">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Must-Visit Gems</span>
+                    <h2>6 Famous Places in <span class="accent">Northern Mindanao</span></h2>
+                    <p>Experience the diverse beauty of Northern Mindanao — from white sand beaches to majestic waterfalls and cultural treasures.</p>
+                </div>
+                <div class="cards-grid">
+                    <!-- Card 1: Camiguin Island - Island Born of Fire -->
+                    <div class="attraction-card">
+                        <div class="card-image" style="background-image: url('philippines--camiguin-xl.jpg');"></div>
+                        <div class="card-content">
+                            <i class="fas fa-volcano card-icon"></i>
+                            <h3>Camiguin Island</h3>
+                            <p>The "Island Born of Fire" with 7 volcanoes, hot springs, white sand bars, and the iconic Sunken Cemetery. A paradise for nature lovers and history enthusiasts.</p>
+                            <div class="location"><i class="fas fa-map-pin"></i> Camiguin Province</div>
+                        </div>
+                    </div>
+                    <!-- Card 2: Maria Cristina Falls - Iligan City -->
+                    <div class="attraction-card">
+                        <div class="card-image" style="background-image: url('1bce5d_50b33ed3f92b48c6a8891a972f3c3dd4~mv2.jpg');"></div>
+                        <div class="card-content">
+                            <i class="fas fa-water card-icon"></i>
+                            <h3>Maria Cristina Falls</h3>
+                            <p>The "Mother of All Falls" and the Philippines' most powerful waterfall. A majestic 320-foot twin cascade that powers the region's hydroelectric plant.</p>
+                            <div class="location"><i class="fas fa-map-pin"></i> Iligan City, Lanao del Norte</div>
+                        </div>
+                    </div>
+                    <!-- Card 3: Dahilayan Adventure Park - Bukidnon -->
+                    <div class="attraction-card">
+                        <div class="card-image" style="background-image: url('Dahilayan-entrance.webp');"></div>
+                        <div class="card-content">
+                            <i class="fas fa-tree card-icon"></i>
+                            <h3>Dahilayan Adventure Park</h3>
+                            <p>Home to the longest dual zipline in Asia. Experience thrilling adventures amidst the cool climate of Bukidnon's pine forest mountains.</p>
+                            <div class="location"><i class="fas fa-map-pin"></i> Manolo Fortich, Bukidnon</div>
+                        </div>
+                    </div>
+                    <!-- Card 4: White Island - Camiguin -->
+                    <div class="attraction-card">
+                        <div class="card-image" style="background-image: url('white-island-camiguin.jpg');"></div>
+                        <div class="card-content">
+                            <i class="fas fa-umbrella-beach card-icon"></i>
+                            <h3>White Island</h3>
+                            <p>A stunning sandbar off the coast of Camiguin with powdery white sand and breathtaking views of Mt. Hibok-Hibok. Perfect for sunrise viewing and swimming.</p>
+                            <div class="location"><i class="fas fa-map-pin"></i> Mambajao, Camiguin</div>
+                        </div>
+                    </div>
+                    <!-- Card 5: Timpoong & Hibok-Hibok Natural Monument - Camiguin -->
+                    <div class="attraction-card">
+                        <div class="card-image" style="background-image: url('Mount-Hibok-Hibok-in-PH.jpg');"></div>
+                        <div class="card-content">
+                            <i class="fas fa-mountain card-icon"></i>
+                            <h3>Mt. Hibok-Hibok</h3>
+                            <p>An active volcano and popular trekking destination offering panoramic views of Camiguin and neighboring islands. A challenging hike with rewarding scenery.</p>
+                            <div class="location"><i class="fas fa-map-pin"></i> Camiguin Province</div>
+                        </div>
+                    </div>
+                    <!-- Card 6: Tinago Falls - Iligan City -->
+                    <div class="attraction-card">
+                        <div class="card-image" style="background-image: url('Tinago-Falls.webp');"></div>
+                        <div class="card-content">
+                            <i class="fas fa-water card-icon"></i>
+                            <h3>Tinago Falls</h3>
+                            <p>A hidden waterfall tucked away in a deep ravine. The name "Tinago" means hidden, and visitors descend over 300 steps to reach this emerald pool paradise.</p>
+                            <div class="location"><i class="fas fa-map-pin"></i> Iligan City, Lanao del Norte</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE / ADVENTURE PREVIEW SECTION WITH VIDEO -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="exp-flex">
+                    <div class="exp-text">
+                        <span class="section-subtitle">Adventure Awaits</span>
+                        <h2>Beyond Ordinary <br>Northern Mindanao Journey</h2>
+                        <p>From conquering the majestic waterfalls of Iligan City to island-hopping in Camiguin, zip-lining through Bukidnon's pine forests, and trekking active volcanoes — every moment in Northern Mindanao is an unforgettable adventure.</p>
+                        <ul class="exp-list">
+                            <li><i class="fas fa-check-circle"></i> Island hopping in Camiguin & White Island sandbar</li>
+                            <li><i class="fas fa-check-circle"></i> Waterfall chasing in Iligan City (City of Majestic Waterfalls)</li>
+                            <li><i class="fas fa-check-circle"></i> Asia's longest dual zipline at Dahilayan</li>
+                            <li><i class="fas fa-check-circle"></i> Trekking Mt. Hibok-Hibok active volcano</li>
+                            <li><i class="fas fa-check-circle"></i> Exploring the Sunken Cemetery & Old Churches</li>
+                            <li><i class="fas fa-check-circle"></i> Cold spring resorts in Bukidnon</li>
+                        </ul>
+                        <button class="btn-primary book-now-exp"><i class="fas fa-ticket-alt"></i> Book Your Adventure</button>
+                    </div>
+                    <div class="exp-gallery">
+                        <div class="video-container">
+                            <video autoplay muted loop playsinline class="adventure-video">
+                                <source src="LOVE NORTHERN MINDANAO.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-caption">
+                                <i class="fas fa-play-circle"></i> Experience Northern Mindanao's Paradise
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOK NOW SECTION / CTA -->
+        <section id="contact" class="booking-cta">
+            <div class="container booking-container">
+                <div class="booking-card-glow">
+                    <h2>Ready to explore <span class="accent-text">Northern Mindanao?</span></h2>
+                    <p>Let's craft your perfect round trip itinerary — from waterfall adventures to island escapades. Secure your slot now!</p>
+                    <button id="mainBookNowBtn" class="btn-large-book"><i class="fas fa-hotel"></i> Book Now — Start Your Round Trip</button>
+                    <div class="small-note">✓ Free cancellation • ✓ Best price guarantee • ✓ 24/7 local support</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT INFORMATION SECTION -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-details">
+                        <div class="section-header text-left">
+                            <span class="section-subtitle">Get In Touch</span>
+                            <h2>Plan Your Northern<br>Mindanao Round Trip Today</h2>
+                            <p>Have questions about your Northern Mindanao adventure? Reach out to our travel specialists and let us help you plan the perfect getaway across Region 10's treasures.</p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h4>Email Us</h4>
+                                    <a href="mailto:northernmindanaoroundtrip@gmail.com">manijaleahkrizza@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h4>Call or Text</h4>
+                                    <a href="tel:+639122919554">0912 291 9554</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-facebook-messenger"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h4>Messenger</h4>
+                                    <p>@northernmindanao_adventures</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h4>Instagram</h4>
+                                    <p>@northernmindanao_adventures</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="business-hours">
+                            <h4><i class="far fa-clock"></i> Business Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
+                            <p>Saturday - Sunday: 9:00 AM - 6:00 PM</p>
+                            <p>24/7 Emergency Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><i class="fas fa-route"></i> Northern Mindanao Round Trip</div>
+                    <p>Your gateway to the enchanting region of Northern Mindanao, where nature, culture, and adventure create unforgettable memories across the Pearl of the South.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#attractions">6 Famous Places</a></li>
+                        <li><a href="#experience">Adventure Packages</a></li>
+                        <li><a href="#">Travel Guide</a></li>
+                        <li><a href="#">Events & Festivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Travel Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Get exclusive deals & Northern Mindanao travel inspiration.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email" id="newsEmail">
+                        <button id="newsBtn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Northern Mindanao Round Trip — Discover the Heart of Northern Mindanao. Your ultimate adventure starts here.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Simple modal for booking alert simulation (JavaScript driven) -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <i class="fas fa-check-circle modal-icon"></i>
+            <h3>Northern Mindanao Awaits!</h3>
+            <p>Thank you for choosing Northern Mindanao Round Trip. Our travel specialist will contact you within 24 hours to craft your dream itinerary across the 6 famous destinations. <br> <strong>#NorthernMindanaoRoundTrip</strong></p>
+            <button class="modal-close-btn">Awesome, Let's Go!</button>
+        </div>
+    </div>
+
+    <!-- External JavaScript (separate file) -->
+    <script src="script.js"></script>
+</body>
+</html>
